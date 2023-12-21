@@ -17,7 +17,7 @@ errorIndication, errorStatus, errorIndex, varBinds = next(
         UsmUserData('usr-sha-aes128', 'authkey1', 'privkey1',
                     authProtocol=usmHMACSHAAuthProtocol,
                     privProtocol=usmAesCfb128Protocol),
-        UdpTransportTarget(('10.131.122.61', 162)),
+        UdpTransportTarget(('snmp接收地址', 162)),
         ContextData(),
         'trap',
         # NotificationType(ObjectIdentity('SNMPv2-MIB', 'authenticationFailure'))
